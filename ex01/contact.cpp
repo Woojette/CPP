@@ -22,3 +22,18 @@ void	Contact::displayContact()
 	std::cout << "Phone number: " << phone_number << std::endl;
 	std::cout << "Darkest secret: " << darkest_secret << std::endl;
 }
+
+std::string	Contact::getFirstname()
+{
+	return (first_name);
+}
+
+std::string	Contact::getLastname()
+{
+	return (last_name);
+}
+
+std::string	Contact::getNickname()
+{
+	return (nickname);
+}
