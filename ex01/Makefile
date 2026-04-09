@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = main.cpp contact.cpp phonebook.cpp
 OBJ = $(SRC:.cpp=.o)
 
-all = $(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)

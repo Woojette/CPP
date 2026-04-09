@@ -2,16 +2,41 @@
 
 void	Contact::addContact()
 {
-	std::cout << "First name: ";
-	std::getline(std::cin, first_name);
-	std::cout << "Last name: ";
-	std::getline(std::cin, last_name);
-	std::cout << "Nickname: ";
-	std::getline(std::cin, nickname);
-	std::cout << "Phone number: ";
-	std::getline(std::cin, phone_number);
-	std::cout << "Darkest secret: ";
-	std::getline(std::cin, darkest_secret);
+	while (1)
+	{
+		std::cout << "First name: ";
+		std::getline(std::cin, first_name);
+		if (!first_name.empty())
+			break;
+	}
+	while (1)
+	{
+		std::cout << "Last name: ";
+		std::getline(std::cin, last_name);
+		if (!last_name.empty())
+			break;
+	}
+	while (1)
+	{
+		std::cout << "Nickname: ";
+		std::getline(std::cin, nickname);
+		if (!nickname.empty())
+			break;
+	}
+	while (1)
+	{
+		std::cout << "Phone number: ";
+		std::getline(std::cin, phone_number);
+		if (!phone_number.empty())
+			break;
+	}
+	while (1)
+	{
+		std::cout << "Darkest secret: ";
+		std::getline(std::cin, darkest_secret);
+		if (!darkest_secret.empty())
+			break;
+	}
 }
 
 void	Contact::displayContact()
