@@ -6,12 +6,14 @@ PhoneBook::PhoneBook()
   count = 0;
 }
 
-void  PhoneBook::addPhoneBook()
+int  PhoneBook::addPhoneBook()
 {
-  contacts[save_index].addContact();
+  if (contacts[save_index].addContact() == 0)
+    return (0);
   save_index = (save_index + 1) % 8;
   if (count < 8)
     count++;
+  return (1);
 }
 
 void  PhoneBook::headerPhoneBook()

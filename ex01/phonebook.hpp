@@ -19,7 +19,7 @@ class   PhoneBook
         bool        checkNumber(const std::string& str);
     public:
         PhoneBook();
-        void    addPhoneBook();
+        int     addPhoneBook();
         void    searchPhoneBook();
 };
 

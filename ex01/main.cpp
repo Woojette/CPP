@@ -13,7 +13,10 @@ int main(void)
     if (command.empty())
       continue ;
     if (command == "ADD")
-      phonebook.addPhoneBook();
+    {
+      if (!phonebook.addPhoneBook())
+        return (1);
+    }
     else if (command == "SEARCH")
       phonebook.searchPhoneBook();
     else if (command == "EXIT")

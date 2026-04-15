@@ -13,7 +13,7 @@ class   Contact
 		std::string phone_number;
 		std::string darkest_secret;
 	public:
-		void	addContact();
+		int		addContact();
 		void	displayContact();
 		std::string	getFirstname();
 		std::string	getLastname();

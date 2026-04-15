@@ -1,42 +1,53 @@
 #include "contact.hpp"
 
-void	Contact::addContact()
+int	Contact::addContact()
 {
 	while (1)
 	{
 		std::cout << "First name: ";
-		std::getline(std::cin, first_name);
-		if (!first_name.empty())
-			break;
+		if (!std::getline(std::cin, first_name))
+			return (0);
+		if (first_name.empty())
+			continue;
+		break;
 	}
 	while (1)
 	{
 		std::cout << "Last name: ";
-		std::getline(std::cin, last_name);
-		if (!last_name.empty())
-			break;
+		if (!std::getline(std::cin, last_name))
+			return (0);
+		if (last_name.empty())
+			continue;
+		break;
 	}
 	while (1)
 	{
 		std::cout << "Nickname: ";
-		std::getline(std::cin, nickname);
-		if (!nickname.empty())
-			break;
+		if (!std::getline(std::cin, nickname))
+			return (0);
+		if (nickname.empty())
+			continue;
+		break;
 	}
 	while (1)
 	{
 		std::cout << "Phone number: ";
-		std::getline(std::cin, phone_number);
-		if (!phone_number.empty())
-			break;
+		if (!std::getline(std::cin, phone_number))
+			return (0);
+		if (phone_number.empty())
+			continue;
+		break;
 	}
 	while (1)
 	{
 		std::cout << "Darkest secret: ";
-		std::getline(std::cin, darkest_secret);
-		if (!darkest_secret.empty())
-			break;
+		if (!std::getline(std::cin, darkest_secret))
+			return (0);
+		if (darkest_secret.empty())
+			continue;
+		break;
 	}
+	return (1);
 }
 
 void	Contact::displayContact()
